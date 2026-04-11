@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://recruit.dental-well-being.jp/sitemap.xml
