@@ -82,4 +82,30 @@ document.addEventListener('DOMContentLoaded', () => {
     countEls.forEach(el => countObserver.observe(el));
   }
 
+  // --- Photo Gallery Lightbox ---
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  if (lightbox && lightboxImg) {
+    document.querySelectorAll('.gallery-grid__item img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('lightbox--active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImg) {
+        lightbox.classList.remove('lightbox--active');
+        document.body.style.overflow = '';
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('lightbox--active')) {
+        lightbox.classList.remove('lightbox--active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
 });
