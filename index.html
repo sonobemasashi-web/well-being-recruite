@@ -62,20 +62,98 @@
   </div>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero__bg" style="background-image: url('img/hero-staff.jpg');"></div>
-    <div class="hero__overlay"></div>
-    <div class="hero__content" style="display: flex; flex-direction: column; justify-content: space-between; min-height: calc(92vh - 68px);">
-      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
-        <h1 class="hero__title">誰かをしあわせにすることで<br>自分もしあわせにしたい人を<br>ここで待っている。</h1>
-        <p class="hero__subtitle" style="font-size: 24px; font-weight: 500; letter-spacing: 0.05em;">家族にできる予防医療を、<br class="sp-only">家族のようなチームの力で</p>
-      </div>
-      <div style="padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.3); text-align: center; padding-bottom: 32px;">
-        <span style="font-family: var(--font-en); font-size: 13px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7;">MISSION</span>
-        <p class="hero__mission" style="font-size: 32px; font-weight: 700; margin-top: 8px; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.2); letter-spacing: 0.05em;"><img src="img/wellbeing-white.png" alt="Well-Being" style="height: 1.5em; vertical-align: middle; display: inline; margin-right: 4px;"><span style="vertical-align: middle;">を共創する</span></p>
+  <section style="background: #FFD6D4; padding: 36px 0 0; overflow: hidden;">
+    <div class="container">
+      <!-- キャッチコピー -->
+      <p style="text-align: center; font-size: clamp(18px, 2.6vw, 28px); font-weight: 900; color: var(--color-primary); line-height: 1.6; margin-bottom: 28px; letter-spacing: 0.02em;">
+        東京都港区なのに、スタッフ30人・ユニット14台<br>こどものスクール型予防なんて他にある！？
+      </p>
+      <!-- 3カラム：写真・ロゴ・写真 -->
+      <div style="display: flex; align-items: flex-end; justify-content: center; gap: 20px;">
+        <!-- 左写真 -->
+        <div style="flex: 1; max-width: 280px;">
+          <img src="img/test_1.jpg" alt="こどもの歯科" style="width: 100%; border-radius: 8px 8px 0 0; display: block; object-fit: cover;">
+        </div>
+        <!-- 中央ロゴ -->
+        <div style="flex: 1; max-width: 300px; text-align: center; padding-bottom: 24px;">
+          <img src="img/hero-top.png" alt="Well-Being Dental Clinic" style="width: 100%; max-width: 280px; display: block; margin: 0 auto;">
+        </div>
+        <!-- 右写真（ハートフレーム） -->
+        <div style="flex: 1; max-width: 280px;">
+          <img src="img/test_2.jpg" alt="こどもの歯科" style="width: 100%; display: block; border-radius: 8px 8px 0 0; object-fit: cover;">
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ===== NUMBERS ===== -->
+  <section class="section section--gradient fade-in">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-heading__en">NUMBERS</span>
+        <h2 class="section-heading__title">数字で見る Well-Being</h2>
+      </div>
+      <div class="stats" style="flex-wrap: wrap; justify-content: center;">
+        <div class="stats__item">
+          <div class="stats__number"><span data-count="14">0</span><span class="stats__unit">台</span></div>
+          <div class="stats__label">ユニット数</div>
+          <div class="stats__sub">治療4＋予防6＋小児4</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number"><span data-count="30">0</span><span class="stats__unit">人</span></div>
+          <div class="stats__label">スタッフ数</div>
+          <div class="stats__sub">Dr9＋DH11＋DA/TC10</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number"><span data-count="120">0</span><span class="stats__unit">日以上</span></div>
+          <div class="stats__label">年間休日</div>
+          <div class="stats__sub">1年の1/3は休み</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number"><span data-count="0">0</span><span class="stats__unit">時間</span></div>
+          <div class="stats__label">残業</div>
+          <div class="stats__sub">18時半には完全退社</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number"><span data-count="5">0</span><span class="stats__unit">分</span></div>
+          <div class="stats__label">徒歩</div>
+          <div class="stats__sub">白金高輪駅から</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number"><span data-count="700">0</span><span class="stats__unit">件</span></div>
+          <div class="stats__label">Google口コミ</div>
+          <div class="stats__sub">地域No.1のブランド</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHOTO GALLERY ===== -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-heading__en">PHOTOS</span>
+        <h2 class="section-heading__title">写真で見る Well-Being</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-grid__item"><img src="images/gallery/photo01.jpg" alt="クリニックの様子 1" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo02.jpg" alt="クリニックの様子 2" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo03.jpg" alt="クリニックの様子 3" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo04.jpg" alt="クリニックの様子 4" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo05.jpg" alt="クリニックの様子 5" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo06.jpg" alt="クリニックの様子 6" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo07.jpg" alt="クリニックの様子 7" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo08.jpg" alt="クリニックの様子 8" loading="lazy"></div>
+        <div class="gallery-grid__item"><img src="images/gallery/photo09.jpg" alt="クリニックの様子 9" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="閉じる">&times;</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="">
+  </div>
 
   <!-- ===== VISION ===== -->
   <section class="section section--alt fade-in">
@@ -166,76 +244,53 @@
     </div>
   </section>
 
-  <!-- ===== PHOTO GALLERY ===== -->
-  <section class="section fade-in">
+  <!-- ===== DIRECTOR MESSAGE ===== -->
+  <section class="section fade-in" style="background: var(--color-bg-alt);">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-heading__en">PHOTOS</span>
-        <h2 class="section-heading__title">写真で見る Well-Being</h2>
+      <div class="section-heading" style="margin-bottom: 48px;">
+        <span class="section-heading__en" style="font-size: 14px; letter-spacing: 3px;">MESSAGE FOR YOU</span>
+        <h2 class="section-heading__title" style="font-size: 32px; margin-top: 8px;">一緒に働く仲間へ</h2>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-grid__item"><img src="images/gallery/photo01.jpg" alt="クリニックの様子 1" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo02.jpg" alt="クリニックの様子 2" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo03.jpg" alt="クリニックの様子 3" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo04.jpg" alt="クリニックの様子 4" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo05.jpg" alt="クリニックの様子 5" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo06.jpg" alt="クリニックの様子 6" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo07.jpg" alt="クリニックの様子 7" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo08.jpg" alt="クリニックの様子 8" loading="lazy"></div>
-        <div class="gallery-grid__item"><img src="images/gallery/photo09.jpg" alt="クリニックの様子 9" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" aria-label="閉じる">&times;</button>
-    <img class="lightbox__img" id="lightbox-img" src="" alt="">
-  </div>
-
-  <!-- ===== NUMBERS ===== -->
-  <section class="section section--gradient fade-in">
-    <div class="container">
-      <div class="section-heading">
-        <span class="section-heading__en">NUMBERS</span>
-        <h2 class="section-heading__title">数字で見る Well-Being</h2>
-      </div>
-      <div class="stats" style="flex-wrap: wrap; justify-content: center;">
-        <div class="stats__item">
-          <div class="stats__number"><span data-count="14">0</span><span class="stats__unit">台</span></div>
-          <div class="stats__label">ユニット数</div>
-          <div class="stats__sub">治療4＋予防6＋小児4</div>
+      <div style="display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap;">
+        <!-- Letter text -->
+        <div style="flex: 1; min-width: 280px;">
+          <p style="line-height: 2; margin-bottom: 20px;">
+            私は、コロナで売上が半分になった時に、「このまま倒産するかもしれない。どうせ倒産するなら本当にやりたい医療をやろう」と覚悟を決めて<span style="color: var(--color-accent); font-weight: 700;">「家族にできる予防医療」</span>を実践しています。
+          </p>
+          <p style="line-height: 2; margin-bottom: 20px;">
+            経営者の自分自身も、スタッフも<span style="color: var(--color-primary); font-weight: 700;">Well-being</span>な状態でいることでしか、<span style="color: var(--color-accent); font-weight: 700;">「家族にできる予防医療」</span>は持続可能にはなりません。
+          </p>
+          <p style="line-height: 2; margin-bottom: 20px;">
+            そして、このような<span style="color: var(--color-primary); font-weight: 700;">キレイゴト</span>は、簡単ではないし、とても厳しく勇気の試される選択です。
+          </p>
+          <p style="line-height: 2; margin-bottom: 20px;">
+            しかし、このような<span style="color: var(--color-primary); font-weight: 700;">キレイゴト</span>を、何かのご縁でビジョンを共有できるチームメンバーがいるから、諦めないで、誇り高き医療人として毎日を充実して生きれているのだと思います。
+          </p>
+          <p style="line-height: 2; margin-bottom: 28px;">
+            将来、自分の子供に誇りを持って伝えられる。将来そんな職場で働きたいと子供に言ってもらえる。そういう職場を共に創りませんか？
+          </p>
+          <p style="line-height: 1.8; font-size: 20px; font-weight: 700; color: var(--color-accent);">
+            誰かをしあわせにすることで<br>
+            自分もしあわせにしたい人を<br>
+            ここで待っている。
+          </p>
+          <p style="margin-top: 32px; text-align: right; font-size: 15px; color: var(--color-text);">
+            医療法人社団SDC 理事長<br>
+            Well-Being Dental Clinic 院長<br>
+            <strong style="font-size: 18px;">園延 昌志</strong>
+          </p>
         </div>
-        <div class="stats__item">
-          <div class="stats__number"><span data-count="30">0</span><span class="stats__unit">人</span></div>
-          <div class="stats__label">スタッフ数</div>
-          <div class="stats__sub">Dr9＋DH11＋DA/TC10</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number"><span data-count="120">0</span><span class="stats__unit">日以上</span></div>
-          <div class="stats__label">年間休日</div>
-          <div class="stats__sub">1年の1/3は休み</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number"><span data-count="0">0</span><span class="stats__unit">時間</span></div>
-          <div class="stats__label">残業</div>
-          <div class="stats__sub">18時半には完全退社</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number"><span data-count="5">0</span><span class="stats__unit">分</span></div>
-          <div class="stats__label">徒歩</div>
-          <div class="stats__sub">白金高輪駅から</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number"><span data-count="700">0</span><span class="stats__unit">件</span></div>
-          <div class="stats__label">Google口コミ</div>
-          <div class="stats__sub">地域No.1のブランド</div>
+        <!-- Director portrait -->
+        <div style="flex: 0 0 260px; text-align: center;">
+          <img src="img/director.jpg" alt="院長 園延昌志" style="width: 100%; border-radius: var(--radius-card); box-shadow: var(--shadow-md);">
+          <p style="margin-top: 12px; font-size: 13px; color: var(--color-text-muted); font-family: var(--font-en); letter-spacing: 2px;">DIRECTOR</p>
+          <p style="font-size: 18px; font-weight: 700; margin-top: 4px;">園延 昌志</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+<!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer__inner">
       <div>
