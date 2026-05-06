@@ -764,10 +764,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
 
-  .stats { flex-direction: column; gap: 24px; }
-  .stats__item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); padding: 16px 0; }
-  .stats__item:last-child { border-bottom: none; }
-  .stats__number { font-size: 48px; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .stats__item {
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 16px 4px;
+  }
+  .stats__item:nth-child(3n) { border-right: none; }
+  .stats__item:nth-last-child(-n+3) { border-bottom: none; }
+  .stats__number { font-size: 32px; }
+  .stats__unit { font-size: 13px; }
+  .stats__label { font-size: 11px; margin-top: 6px; }
+  .stats__sub { font-size: 9px; margin-top: 2px; }
 
   .stepper { flex-direction: column; gap: 24px; align-items: flex-start; padding-left: 32px; }
   .stepper__step { text-align: left; display: flex; align-items: flex-start; gap: 12px; }
@@ -992,7 +1004,23 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .wb-cards {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+  }
+  /* ABOUT WB セクション：タイトル上下余白削減 */
+  #about-wb {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+  #about-wb .section-heading {
+    margin-bottom: 20px !important;
+  }
+  /* カード内余白削減 */
+  .wb-card {
+    padding: 18px 16px;
+  }
+  .wb-card__header {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1024,29 +1052,30 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* SP: テキスト上・画像縦積み */
+/* SP: テキストを画像のピンクエリアにオーバーレイ */
 @media (max-width: 767px) {
   .hero-wb {
-    position: static;
-    display: flex;
-    flex-direction: column;
+    position: relative;
   }
   .hero-wb__text {
-    position: static;
-    padding: 24px 20px 12px;
-    order: 1;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 2;
     text-align: center;
+    padding: clamp(85px, 27%, 115px) 12px 0;
+    line-height: normal;
   }
   .hero-wb__text p {
-    font-size: clamp(15px, 4.2vw, 20px);
+    font-size: 4.2vw;
     text-align: center;
-    line-height: 1.7;
+    line-height: 1.8;
+    white-space: nowrap;
   }
   .hero-wb__img {
-    order: 2;
     object-fit: cover;
-    object-position: 25% bottom;
-    height: 230px;
+    object-position: 20% 65%;
+    height: 360px;
     width: 100%;
+    display: block;
   }
 }
