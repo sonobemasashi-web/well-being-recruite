@@ -62,26 +62,67 @@
   </div>
 
   <!-- ===== HERO ===== -->
-  <section style="background: #FFD6D4; padding: 36px 0 0; overflow: hidden;">
+  <section class="hero-wb">
+    <div class="hero-wb__text">
+      <p>東京港区なのに、スタッフ30人・ユニット14台<br>こどものスクール型予防なんて他にある！？</p>
+    </div>
+    <img src="img/hero-bg.jpg" alt="Well-Being Dental Clinic" class="hero-wb__img">
+  </section>
+
+  <!-- ===== ABOUT WB ===== -->
+  <section class="section fade-in" style="background: #fff; padding-top: 52px; padding-bottom: 52px;">
     <div class="container">
-      <!-- キャッチコピー -->
-      <p style="text-align: center; font-size: clamp(18px, 2.6vw, 28px); font-weight: 900; color: var(--color-primary); line-height: 1.6; margin-bottom: 28px; letter-spacing: 0.02em;">
-        東京都港区なのに、スタッフ30人・ユニット14台<br>こどものスクール型予防なんて他にある！？
-      </p>
-      <!-- 3カラム：写真・ロゴ・写真 -->
-      <div style="display: flex; align-items: flex-end; justify-content: center; gap: 20px;">
-        <!-- 左写真 -->
-        <div style="flex: 1; max-width: 280px;">
-          <img src="img/test_1.jpg" alt="こどもの歯科" style="width: 100%; border-radius: 8px 8px 0 0; display: block; object-fit: cover;">
+      <div class="section-heading" style="margin-bottom: 48px;">
+        <span class="section-heading__en" style="font-size: 14px; letter-spacing: 3px;">ABOUT WELL-BEING</span>
+        <h2 class="section-heading__title" style="font-size: 32px; margin-top: 8px;">3つで表すWell-Being</h2>
+      </div>
+      <div class="wb-cards">
+
+        <!-- Card 1 -->
+        <div class="wb-card">
+          <div class="wb-card__header">
+            <div class="wb-card__icon" style="background: var(--color-primary);">
+              <span>?</span>
+            </div>
+            <h3 class="wb-card__title">どんな歯科医院？</h3>
+          </div>
+          <ul class="wb-card__list">
+            <li><span class="wb-card__num">①</span>都内・駅近・おしゃれで緑の多いデザイン</li>
+            <li><span class="wb-card__num">②</span>ママと子供のための予防&amp;美容に強い</li>
+            <li><span class="wb-card__num">③</span>カウンセリングやMBTIなど心理学研修</li>
+          </ul>
         </div>
-        <!-- 中央ロゴ -->
-        <div style="flex: 1; max-width: 300px; text-align: center; padding-bottom: 24px;">
-          <img src="img/hero-top.png" alt="Well-Being Dental Clinic" style="width: 100%; max-width: 280px; display: block; margin: 0 auto;">
+
+        <!-- Card 2 -->
+        <div class="wb-card">
+          <div class="wb-card__header">
+            <div class="wb-card__icon" style="background: #FDCB6E;">
+              <span>!</span>
+            </div>
+            <h3 class="wb-card__title">他の医院との違いは？</h3>
+          </div>
+          <ul class="wb-card__list">
+            <li><span class="wb-card__num">①</span>東京港区で100坪・ユニット14台・スタッフ30人とすごい！</li>
+            <li><span class="wb-card__num">②</span>人として成長できる圧倒的な学べる環境がすごい！</li>
+            <li><span class="wb-card__num">③</span>スタッフ主体で職場をよくする仕組みがすごい！</li>
+          </ul>
         </div>
-        <!-- 右写真（ハートフレーム） -->
-        <div style="flex: 1; max-width: 280px;">
-          <img src="img/test_2.jpg" alt="こどもの歯科" style="width: 100%; display: block; border-radius: 8px 8px 0 0; object-fit: cover;">
+
+        <!-- Card 3 -->
+        <div class="wb-card">
+          <div class="wb-card__header">
+            <div class="wb-card__icon" style="background: var(--color-accent);">
+              <span>♡</span>
+            </div>
+            <h3 class="wb-card__title">どんな人を求めてる？</h3>
+          </div>
+          <ul class="wb-card__list">
+            <li><span class="wb-card__num">①</span>東京で法令遵守と環境整備された大型医療法人で安心して働きたい方</li>
+            <li><span class="wb-card__num">②</span>医療人としても、人間としても成長して自信を持ちたい方</li>
+            <li><span class="wb-card__num">③</span>信頼と尊敬できる先輩や同僚と誇りの持てる仕事がしたい方</li>
+          </ul>
         </div>
+
       </div>
     </div>
   </section>
@@ -245,7 +286,7 @@
   </section>
 
   <!-- ===== DIRECTOR MESSAGE ===== -->
-  <section class="section fade-in" style="background: var(--color-bg-alt);">
+  <section class="section fade-in" style="background: #fff;">
     <div class="container">
       <div class="section-heading" style="margin-bottom: 48px;">
         <span class="section-heading__en" style="font-size: 14px; letter-spacing: 3px;">MESSAGE FOR YOU</span>
@@ -267,20 +308,20 @@
           <p style="line-height: 2; margin-bottom: 28px;">
             将来、自分の子供に誇りを持って伝えられる。将来そんな職場で働きたいと子供に言ってもらえる。そういう職場を共に創りませんか？
           </p>
-          <p style="line-height: 1.8; font-size: 20px; font-weight: 700; color: var(--color-accent); margin-bottom: 40px;">
-            誰かをしあわせにすることで<br>
-            自分もしあわせにしたい人を<br>
-            ここで待っている。
-          </p>
-          <!-- Photo + sign-off: right-aligned -->
-          <div style="display: flex; justify-content: flex-end; align-items: flex-end; gap: 24px;">
-            <div style="text-align: right; font-size: 15px; color: var(--color-text); line-height: 2;">
-              医療法人社団SDC 理事長<br>
-              Well-Being Dental Clinic 院長<br>
-              <strong style="font-size: 18px;">園延 昌志</strong>
-            </div>
-            <div style="flex: 0 0 160px;">
-              <img src="img/director.jpg" alt="院長 園延昌志" style="width: 100%; border-radius: var(--radius-card); box-shadow: var(--shadow-md); display: block;">
+          <!-- Poem (left) / photo+signoff (right) -->
+          <div class="director-bottom">
+            <p class="director-bottom__poem">
+              誰かをしあわせにすることで<br>
+              自分もしあわせにしたい人を<br>
+              ここで待っている。
+            </p>
+            <div class="director-bottom__right">
+              <img src="img/director.jpg" alt="院長 園延昌志" style="border-radius: var(--radius-card); box-shadow: var(--shadow-md);">
+              <p class="director-bottom__signoff">
+                医療法人社団SDC 理事長<br>
+                Well-Being Dental Clinic 院長<br>
+                <strong style="font-size: 18px;">園延 昌志</strong>
+              </p>
             </div>
           </div>
         </div>

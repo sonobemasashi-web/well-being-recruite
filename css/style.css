@@ -45,8 +45,8 @@
 
   /* Layout */
   --max-width: 1200px;
-  --section-padding: 80px 0;
-  --section-padding-sp: 48px 0;
+  --section-padding: 52px 0;
+  --section-padding-sp: 40px 0;
 
   /* Font */
   --font-ja: 'Noto Sans JP', sans-serif;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Section Heading --- */
 .section-heading {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 .section-heading__en {
   display: block;
@@ -856,4 +856,197 @@ h1, h2, h3, h4, h5, h6 {
 }
 .lightbox__close:hover {
   opacity: 1;
+}
+
+
+/* Hero title overlay - mobile adjustment */
+@media (max-width: 768px) {
+  .hero-title-overlay {
+    top: 35% !important;
+  }
+  .hero-title-overlay p {
+    white-space: normal !important;
+    font-size: 14px !important;
+  }
+}
+
+
+/* ===== DIRECTOR MESSAGE BOTTOM ===== */
+/* PC: flex row — poem(left) / photo+signoff(right) */
+.director-bottom {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+.director-bottom__poem {
+  flex: 1;
+  line-height: 1.8;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin: 0;
+  align-self: flex-start;
+}
+.director-bottom__right {
+  flex: 0 0 260px;
+  text-align: center;
+}
+.director-bottom__right img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-md);
+}
+.director-bottom__signoff {
+  margin-top: 16px;
+  text-align: right;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 2;
+}
+
+/* SP: column — poem → photo+signoff */
+@media (max-width: 767px) {
+  .director-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .director-bottom__right {
+    flex: unset;
+    width: 100%;
+  }
+  .director-bottom__signoff {
+    text-align: center;
+  }
+}
+
+
+/* ===== ABOUT WB — 3つで表すWell-Being ===== */
+.wb-cards {
+  display: flex;
+  gap: 24px;
+}
+.wb-card {
+  flex: 1;
+  background: #fff;
+  border: 2px solid var(--color-bg-alt);
+  border-radius: var(--radius-card);
+  padding: 32px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.wb-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.wb-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-bg-alt);
+}
+.wb-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.wb-card__icon span {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+.wb-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+.wb-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.wb-card__list li {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+.wb-card__num {
+  font-weight: 700;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .wb-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+/* ===== HERO WB ===== */
+.hero-wb {
+  position: relative;
+  overflow: hidden;
+  background: #FFD6D4;
+}
+.hero-wb__text {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 2;
+  text-align: center;
+  padding: clamp(40px, 15%, 130px) 20px 0;
+  line-height: normal;
+}
+.hero-wb__text p {
+  font-size: clamp(18px, 3.3vw, 46px);
+  font-weight: 900;
+  color: #FF7675;
+  line-height: 1.65;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+.hero-wb__img {
+  width: 100%;
+  display: block;
+}
+
+/* SP: テキスト上・画像縦積み */
+@media (max-width: 767px) {
+  .hero-wb {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-wb__text {
+    position: static;
+    padding: 24px 20px 12px;
+    order: 1;
+    text-align: center;
+  }
+  .hero-wb__text p {
+    font-size: clamp(15px, 4.2vw, 20px);
+    text-align: center;
+    line-height: 1.7;
+  }
+  .hero-wb__img {
+    order: 2;
+    object-fit: cover;
+    object-position: 25% bottom;
+    height: 230px;
+    width: 100%;
+  }
 }
