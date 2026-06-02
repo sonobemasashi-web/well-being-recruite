@@ -218,6 +218,72 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.8;
 }
 
+/* --- Card with YouTube: タイトル全幅 → 下段 左キャプション・右サムネイル --- */
+.card__body--with-yt .card__title {
+  width: 100%;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__body-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
+}
+.card__text-wrap {
+  flex: 1;
+  min-width: 0;
+}
+.card-yt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.card-yt__thumb {
+  position: relative;
+  width: 110px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-yt:hover .card-yt__thumb {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.28);
+}
+.card-yt__thumb img {
+  width: 100%;
+  display: block;
+}
+.card-yt__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 0, 0, 0.88);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+  padding-left: 2px;
+}
+.card-yt__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
 /* --- Grid --- */
 .grid {
   display: grid;
@@ -553,10 +619,13 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Timeline --- */
 .timeline {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   position: relative;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
+  gap: 0;
 }
 .timeline::before {
   content: '';
@@ -568,9 +637,13 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-primary);
 }
 .timeline__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   flex: 1;
   position: relative;
+  padding: 0 8px;
 }
 .timeline__dot {
   width: 32px;
@@ -765,7 +838,45 @@ h1, h2, h3, h4, h5, h6 {
 
   .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
 
-  .stats {
+  /* --- Benefits Grid: 3×2 on mobile --- */
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+  .benefits-grid .card__body {
+    padding: 10px 6px !important;
+  }
+  .benefits-grid .card__body > div[style] {
+    font-size: 22px !important;
+    margin-bottom: 4px !important;
+  }
+  .benefits-grid .card__title {
+    font-size: 11px !important;
+    margin-bottom: 4px !important;
+    line-height: 1.3 !important;
+  }
+  .benefits-grid .card__text {
+    font-size: 9.5px !important;
+    line-height: 1.4 !important;
+  }
+
+/* --- Benefits All Grid: 2×6 on mobile --- */
+  .benefits-all-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  .benefits-all-grid .card__body {
+    padding: 16px 10px !important;
+  }
+  .benefits-all-grid .card__title {
+    font-size: 13px !important;
+  }
+  .benefits-all-grid .card__text {
+    font-size: 10.5px !important;
+    line-height: 1.5 !important;
+  }
+
+.stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
@@ -787,10 +898,12 @@ h1, h2, h3, h4, h5, h6 {
   .stepper__step::after { display: none; }
   .stepper__num { margin: 0; flex-shrink: 0; }
 
-  .timeline { flex-direction: column; gap: 24px; padding-left: 32px; }
-  .timeline::before { top: 0; bottom: 0; left: 15px; width: 2px; height: auto; right: auto; }
-  .timeline__item { text-align: left; display: flex; gap: 16px; align-items: flex-start; }
-  .timeline__dot { margin: 0; flex-shrink: 0; }
+  .timeline { flex-direction: column; gap: 10px; padding-left: 0; }
+  .timeline::before { display: none; }
+  .timeline__item { text-align: left; display: flex; flex-direction: row !important; align-items: center; gap: 10px; padding: 10px 12px; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+  .timeline__dot { margin: 0; flex-shrink: 0; width: 28px !important; height: 28px !important; font-size: 11px !important; }
+  .timeline__label { font-size: 13px; font-weight: 700; flex-shrink: 0; margin-bottom: 0 !important; }
+  .timeline__desc { font-size: 11.5px; margin: 0; line-height: 1.4; }
 
   .footer__inner { grid-template-columns: 1fr; gap: 24px; text-align: center; }
 
@@ -1170,5 +1283,102 @@ h1, h2, h3, h4, h5, h6 {
     height: 360px;
     width: 100%;
     display: block;
+  }
+}
+
+/* DH 小児グリッド：モバイルで縦並び・横幅いっぱい */
+@media (max-width: 767px) {
+  .dh-kids-grid {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .dh-kids-grid__img {
+    width: 100% !important;
+    min-width: unset !important;
+  }
+}
+
+/* DH スタッフインタビュー リール グリッド */
+.ig-reels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.ig-reels-item {
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  /* 動画部分のみ表示（ヘッダー55px＋縦動画高さ）*/
+  max-height: 520px;
+}
+/* 切り口を背景色でなじませる */
+.ig-reels-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--color-bg-alt);
+  z-index: 10;
+  pointer-events: none;
+}
+.ig-reels-item .instagram-media {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+@media (max-width: 767px) {
+  .ig-reels-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .ig-reels-item {
+    max-height: 680px;
+  }
+}
+
+/* DR 書籍付きパネル：PC横並び・モバイル縦並び */
+.dr-panel-book-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .dr-panel-book-layout {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .dr-panel-book-layout > a {
+    width: 140px !important;
+    align-self: center;
+  }
+}
+
+/* DA PROGRAMS グリッド：PC2列・モバイル1列 */
+.da-programs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 767px) {
+  .da-programs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* DA EDUCATOR & TC カード：モバイルで縦並び */
+@media (max-width: 767px) {
+  .educator-tc-card {
+    flex-direction: column !important;
+  }
+  .educator-tc-card__img {
+    width: 100% !important;
+    height: 220px !important;
   }
 }

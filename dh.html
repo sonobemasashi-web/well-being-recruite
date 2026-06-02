@@ -117,6 +117,9 @@
         <!-- 1. MTM研修 -->
         <div style="background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-sm); padding: 32px; border-left: 4px solid var(--color-primary);">
           <h3 style="font-size: 20px; font-weight: 700; color: var(--color-primary); margin-bottom: 12px;">1. MTMに特化した研修講師から直接指導が毎月受けられる</h3>
+          <p style="font-size: 14px; line-height: 1.9; color: var(--color-text); margin-bottom: 16px;">
+            メディカルトリートメントモデル（MTM）とは、患者ごとのリスク診査・診断に基づいた、予防医療システムのことです。ただのクリーニング屋さんではない、医療プロフェッショナルとしての歯科衛生士として、患者だけではなく、その家族や地域の健康を支援できるとてもやりがいのあるシステムです。
+          </p>
           <p style="font-size: 14px; line-height: 1.9; color: var(--color-text-secondary); margin-bottom: 16px;">
             予防歯科の第一線で活躍する研修講師（オーラルケアサロン Lycka 前田奈美先生）から、MTMの理念と実践を毎月直接学べます。
           </p>
@@ -127,11 +130,11 @@
         <div style="background: #fff; border-radius: var(--radius-card); box-shadow: var(--shadow-sm); padding: 32px; border-left: 4px solid var(--color-accent);">
           <h3 style="font-size: 20px; font-weight: 700; color: var(--color-accent); margin-bottom: 12px;">2. 小児予防管理をスクール型でエンタメ化</h3>
           <p style="font-size: 14px; line-height: 1.9; color: var(--color-text-secondary); margin-bottom: 16px;">
-            子どもたちが楽しく通える仕組み「Well-bee club」で、予防管理をエンターテインメントに変えています。
+            小児予防歯科は子どもの健康習慣づくりが大切です。今までの歯科医院の「こわい場所」ではなく、「通いたくなる楽しい場所」にするエンターテインメント型の小児予防歯科を実践しています。子どもたちが楽しく通える仕組み「Well-bee club」をぜひ、一度見学しに来てください。
           </p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <img src="img/dh-kids-activity.jpg" alt="小児スクール型メンテナンス" style="width: 48%; min-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s; object-fit: cover;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.02)'" onmouseleave="this.style.transform='scale(1)'">
-            <img src="img/dh-wellbee-note.jpg" alt="Well-bee club NOTEBOOK" style="width: 48%; min-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s; object-fit: cover;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.02)'" onmouseleave="this.style.transform='scale(1)'">
+          <div class="dh-kids-grid" style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <img src="img/dh-kids-activity.jpg" alt="小児スクール型メンテナンス" class="dh-kids-grid__img" style="width: 48%; min-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s; object-fit: cover;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.02)'" onmouseleave="this.style.transform='scale(1)'">
+            <img src="img/dh-wellbee-note.jpg" alt="Well-bee club NOTEBOOK" class="dh-kids-grid__img" style="width: 48%; min-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s; object-fit: cover;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.02)'" onmouseleave="this.style.transform='scale(1)'">
           </div>
         </div>
 
@@ -155,6 +158,48 @@
   <div id="dhModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; cursor:pointer;" onclick="this.style.display='none'">
     <img id="dhModalImg" src="" alt="" style="max-width: 90vw; max-height: 85vh; border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);">
   </div>
+
+  <!-- ===== EQUIPMENT ===== -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-heading__en">EQUIPMENT</span>
+        <h2 class="section-heading__title">診療設備</h2>
+      </div>
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+          <div style="background: #fff; border-radius: 12px; box-shadow: var(--shadow-sm); overflow: hidden;">
+            <img src="img/equip-maintenance.jpg" alt="成人メンテナンス個室" style="width: 100%; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.2s;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.03)'" onmouseleave="this.style.transform='scale(1)'">
+            <div style="padding: 20px;">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">成人メンテナンス（個室）</h3>
+              <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8;">プライバシーに配慮した個室でゆっくりとメンテナンス</p>
+            </div>
+          </div>
+          <div style="background: #fff; border-radius: 12px; box-shadow: var(--shadow-sm); overflow: hidden;">
+            <img src="img/equip-saliva.png" alt="唾液検査" style="width: 100%; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.2s;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.03)'" onmouseleave="this.style.transform='scale(1)'">
+            <div style="padding: 20px;">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">唾液（サリバ）検査</h3>
+              <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8;">リスク診査・診断に基づく予防医療の実践</p>
+            </div>
+          </div>
+          <div style="background: #fff; border-radius: 12px; box-shadow: var(--shadow-sm); overflow: hidden;">
+            <img src="img/equip-kids-floor.jpg" alt="小児専用フロア" style="width: 100%; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.2s;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.03)'" onmouseleave="this.style.transform='scale(1)'">
+            <div style="padding: 20px;">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">小児専用フロア</h3>
+              <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8;">水平Unit 4台</p>
+            </div>
+          </div>
+          <div style="background: #fff; border-radius: 12px; box-shadow: var(--shadow-sm); overflow: hidden;">
+            <img src="img/equip-kids-room.jpg" alt="キッズルームと研修ルーム" style="width: 100%; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.2s;" onclick="document.getElementById('dhModal').style.display='flex';document.getElementById('dhModalImg').src=this.src;document.getElementById('dhModalImg').alt=this.alt;" onmouseenter="this.style.transform='scale(1.03)'" onmouseleave="this.style.transform='scale(1)'">
+            <div style="padding: 20px;">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--color-primary); margin-bottom: 8px;">キッズルームと研修ルーム</h3>
+              <p style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.8;">スクール型、アクティビティ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== DAILY SCHEDULE ===== -->
   <style>
@@ -266,52 +311,407 @@
         <div class="onboard__item">
           <div class="onboard__dot"></div>
           <div class="onboard__time">6ヶ月</div>
-          <div class="onboard__label">初期治療を担当<br>カウンセリングを学ぶ</div>
+          <div class="onboard__label">衛生士業務全クリア<br>→患者配当<br>（先輩サポート継続）</div>
         </div>
         <div class="onboard__item">
           <div class="onboard__dot"></div>
           <div class="onboard__time">9ヶ月</div>
-          <div class="onboard__label">小児予防や<br>ホワイトニング学習</div>
+          <div class="onboard__label">目標管理<br>（売上や患者数）</div>
         </div>
         <div class="onboard__item">
           <div class="onboard__dot onboard__dot--accent"></div>
           <div class="onboard__time onboard__time--accent">12ヶ月</div>
-          <div class="onboard__label">DHメニュー<br>全クリア！</div>
+          <div class="onboard__label">次年度の新人教育<br>に関わる</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== EXPERIENCED HIRE ===== -->
+  <!-- ===== CAREER TYPE TABS ===== -->
+  <style>
+    .career-tabs { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; padding: 40px 20px 24px; }
+    .career-tab {
+      padding: 12px 28px; border-radius: 100px; font-size: 15px; font-weight: 700;
+      cursor: pointer; border: none; transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+      color: #fff; letter-spacing: 0.03em;
+    }
+    .career-tab--shinsotsu {
+      background: #00CEC9;
+      box-shadow: 0 3px 12px rgba(0,206,201,0.35);
+      transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+    }
+    .career-tab--shinsotsu:hover, .career-tab--shinsotsu.active {
+      background: #00a8a4;
+      box-shadow: 0 6px 20px rgba(0,206,201,0.55);
+      transform: translateY(-3px);
+    }
+    .career-tab--chuto {
+      background: #FF7675;
+      box-shadow: 0 3px 12px rgba(255,118,117,0.35);
+      transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+    }
+    .career-tab--chuto:hover, .career-tab--chuto.active {
+      background: #e05555;
+      box-shadow: 0 6px 20px rgba(255,118,117,0.55);
+      transform: translateY(-3px);
+    }
+    .career-tab--keiken {
+      background: #00B894;
+      box-shadow: 0 3px 12px rgba(0,184,148,0.35);
+      transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+    }
+    .career-tab--keiken:hover, .career-tab--keiken.active {
+      background: #009474;
+      box-shadow: 0 6px 20px rgba(0,184,148,0.55);
+      transform: translateY(-3px);
+    }
+    .career-tab--blank {
+      background: #FDCB6E;
+      box-shadow: 0 3px 12px rgba(253,203,110,0.35);
+      color: #5a4a00;
+      transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+    }
+    .career-tab--blank:hover, .career-tab--blank.active {
+      background: #e6a817;
+      box-shadow: 0 6px 20px rgba(253,203,110,0.6);
+      transform: translateY(-3px);
+    }
+
+    .career-panel { display: block; }
+    .career-tab.active { transform: translateY(-3px); }
+
+    .career-card {
+      border-radius: 16px; padding: 40px; max-width: 900px;
+      margin: 0 auto 40px; display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap;
+    }
+    .career-card--shinsotsu { background: #e0faf9; }
+    .career-card--chuto     { background: #fff0f0; }
+    .career-card--keiken    { background: #e6fff8; }
+    .career-card--blank     { background: #fffde7; }
+    .career-card__body { flex: 1; min-width: 260px; }
+    .career-card__title { font-size: 22px; font-weight: 900; margin-bottom: 16px; }
+    .career-card__title--shinsotsu { color: #00CEC9; }
+    .career-card__title--chuto     { color: #FF7675; }
+    .career-card__title--keiken    { color: #00B894; }
+    .career-card__title--blank     { color: #e6a817; }
+    .career-card p { font-size: 15px; line-height: 1.85; color: var(--color-text); margin-bottom: 14px; }
+    .career-card ul { font-size: 14px; color: var(--color-text); line-height: 1.9; list-style: none; padding: 0; }
+    .career-card ul li { margin-bottom: 8px; }
+
+    @media (max-width: 767px) {
+      .career-tabs { gap: 8px; padding: 28px 12px 16px; }
+      .career-tab { font-size: 13px; padding: 10px 18px; }
+      .career-card { padding: 24px 20px; }
+    }
+  </style>
+
+  <section class="section fade-in" style="padding-top: 0;">
+    <div class="container">
+      <!-- タブボタン -->
+      <div class="career-tabs">
+        <button class="career-tab career-tab--shinsotsu" onclick="scrollToCareer('panel-shinsotsu', this)">新卒の方へ</button>
+        <button class="career-tab career-tab--chuto"     onclick="scrollToCareer('panel-chuto', this)">中途（1〜3年）</button>
+        <button class="career-tab career-tab--keiken"    onclick="scrollToCareer('panel-keiken', this)">経験者（5年以上）</button>
+        <button class="career-tab career-tab--blank"     onclick="scrollToCareer('panel-blank', this)">ブランク復帰</button>
+      </div>
+
+      <!-- 新卒パネル -->
+      <div class="career-panel" id="panel-shinsotsu" style="scroll-margin-top: 80px;">
+        <div class="career-card career-card--shinsotsu">
+          <div class="career-card__body">
+            <h3 class="career-card__title career-card__title--shinsotsu">新卒の方へ</h3>
+            <p>歯科衛生士として、最高のスタートを切れる環境を用意しています。一から丁寧に育てる文化が根付いており、先輩DHが親身にサポートします。</p>
+            <ul>
+              <li>✓ 担当制で先輩DHが1対1でサポート</li>
+              <li>✓ 1年間のオンボーディングプログラムで着実にスキルアップ</li>
+              <li>✓ MTMの基礎から実践まで研修講師が毎月指導</li>
+              <li>✓ 国家試験後すぐ活躍できる研修カリキュラム</li>
+            </ul>
+          </div>
+          <a href="https://youtube.com/shorts/5xL8CpbVMLA" target="_blank" rel="noopener" style="flex: 0 0 auto; width: 200px; margin: 0 auto; display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.12); text-decoration: none; transition: transform 0.3s;" onmouseenter="this.style.transform='scale(1.03)'" onmouseleave="this.style.transform='scale(1)'">
+            <img src="https://img.youtube.com/vi/5xL8CpbVMLA/maxresdefault.jpg" alt="DH紹介動画" style="width: 100%; aspect-ratio: 9/16; object-fit: cover; display: block;">
+            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.5)"/><polygon points="22,16 42,28 22,40" fill="#fff"/></svg>
+            </div>
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); text-align: center;">
+              <span style="color: #fff; font-size: 12px; font-weight: 600;">YouTubeで視聴する</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- 中途パネル -->
+      <div class="career-panel" id="panel-chuto" style="scroll-margin-top: 80px;">
+        <div class="career-card career-card--chuto">
+          <div class="career-card__body">
+            <h3 class="career-card__title career-card__title--chuto">中途（1〜3年）の方へ</h3>
+            <p>ある程度の経験を持ちながらも、もっと成長したい・予防歯科を深く学びたいという方を歓迎します。既存スキルを活かしつつ、MTMや小児予防歯科の専門性を身につけられます。</p>
+            <ul>
+              <li>✓ 前職の経験を尊重したオーダーメイドの成長プラン</li>
+              <li>✓ 予防歯科・MTMの専門スキルを集中的に習得</li>
+              <li>✓ 給与は経験・スキルを考慮して設定</li>
+              <li>✓ チームに溶け込みやすい雰囲気・丁寧なオンボーディング</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 経験者パネル -->
+      <div class="career-panel" id="panel-keiken" style="scroll-margin-top: 80px;">
+        <div class="career-card career-card--keiken">
+          <div class="career-card__body">
+            <h3 class="career-card__title career-card__title--keiken">経験者（5年以上）の方へ</h3>
+            <p>当院では経験豊富なDHを大歓迎しています。これまでのキャリアを活かしながら、最新のMTM手法や予防歯科の最前線を学べます。</p>
+            <ul>
+              <li>✓ 給与は経験・スキルで加算</li>
+              <li>✓ 独立した患者さんを担当できる環境</li>
+              <li>✓ 専門性を深められるセミナー・学会参加サポート</li>
+              <li>✓ キャリアアップのパスを一緒に考える</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ブランク復帰パネル -->
+      <div class="career-panel" id="panel-blank" style="scroll-margin-top: 80px;">
+        <div class="career-card career-card--blank">
+          <div class="career-card__body">
+            <h3 class="career-card__title career-card__title--blank">ブランク復帰の方へ</h3>
+            <p>育児・介護・留学など、さまざまな理由でブランクがある方も大歓迎です。丁寧なウォームアップ期間を設けているので、安心して復帰できます。</p>
+            <ul>
+              <li>✓ ブランク期間に関わらず歓迎・スキル確認から始める</li>
+              <li>✓ 短時間勤務・パート勤務からの相談も可能</li>
+              <li>✓ 先輩DHによるマンツーマンフォロー</li>
+              <li>✓ 無理のないペースで現場復帰をサポート</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function scrollToCareer(id, btn) {
+      // アクティブ状態を更新
+      document.querySelectorAll('.career-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      // スムーズスクロール
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // スクロール位置に応じてバナーのアクティブ状態を更新
+    const panels = ['shinsotsu', 'chuto', 'keiken', 'blank'];
+    window.addEventListener('scroll', () => {
+      let current = null;
+      panels.forEach(id => {
+        const el = document.getElementById('panel-' + id);
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 120) current = id;
+      });
+      document.querySelectorAll('.career-tab').forEach(t => t.classList.remove('active'));
+      if (current) {
+        const idx = panels.indexOf(current);
+        const tabs = document.querySelectorAll('.career-tab');
+        if (tabs[idx]) tabs[idx].classList.add('active');
+      }
+    });
+  </script>
+
+  <!-- ===== STAFF INTERVIEW REELS ===== -->
+  <section class="section section--alt fade-in">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-heading__en">INTERVIEW</span>
+        <h2 class="section-heading__title">実際のスタッフのインタビュー</h2>
+      </div>
+      <div class="ig-reels-grid">
+        <div class="ig-reels-item">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DS7Alz7ga4S/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:0;padding:0;width:100%;">
+          </blockquote>
+        </div>
+        <div class="ig-reels-item">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DTH4onek-Sk/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:0;padding:0;width:100%;">
+          </blockquote>
+        </div>
+        <div class="ig-reels-item">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DThomT5EZtY/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:0;padding:0;width:100%;">
+          </blockquote>
+        </div>
+        <div class="ig-reels-item">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DTpW9VnkY9q/?utm_source=ig_embed&amp;utm_campaign=loading"
+            data-instgrm-version="14"
+            style="background:#FFF;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);margin:0;padding:0;width:100%;">
+          </blockquote>
+        </div>
+      </div>
+      <script async src="https://www.instagram.com/embed.js"></script>
+      <script>
+        // embed.js読み込み後に手動でも処理を走らせる
+        window.addEventListener('load', function() {
+          if (window.instgrm) window.instgrm.Embeds.process();
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- ===== CAREER & SALARY ===== -->
   <section class="section fade-in">
     <div class="container">
-      <div style="background: var(--color-yellow-light); border-left: 6px solid var(--color-yellow); border-radius: 12px; padding: 40px; max-width: 900px; margin: 0 auto; display: flex; gap: 32px; align-items: center; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 280px;">
-          <h3 style="font-size: 20px; font-weight: 700; color: var(--color-text); margin-bottom: 16px;">経験者さんへ</h3>
-          <p style="font-size: 15px; color: var(--color-text); line-height: 1.8; margin-bottom: 12px;">
-            当院では経験豊富なDHを大歓迎しています。これまでのキャリアを活かしながら、最新のMTM手法や予防歯科の最前線を学べます。
-          </p>
-          <ul style="font-size: 14px; color: var(--color-text); line-height: 1.9;">
-            <li style="margin-bottom: 8px;">✓ 給与は経験・スキルで加算</li>
-            <li style="margin-bottom: 8px;">✓ 独立した患者さんを担当できる環境</li>
-            <li style="margin-bottom: 8px;">✓ 専門性を深められるセミナー・学会参加サポート</li>
-            <li>✓ キャリアアップのパスを一緒に考える</li>
-          </ul>
+      <div class="section-heading">
+        <span class="section-heading__en">CAREER & SALARY</span>
+        <h2 class="section-heading__title">キャリアと給与</h2>
+      </div>
+      <div class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th>年次</th>
+              <th>ポジション</th>
+              <th>月給目安</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-card__label">1〜2年目</td>
+              <td>新人</td>
+              <td><strong>28万円〜</strong></td>
+            </tr>
+            <tr>
+              <td class="table-card__label">3〜5年目</td>
+              <td>一般社員</td>
+              <td><strong>30〜35万円</strong></td>
+            </tr>
+            <tr>
+              <td class="table-card__label">6年目〜</td>
+              <td>管理職</td>
+              <td><strong>36万円〜</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align: center; margin-top: 24px; font-size: 13px; color: var(--color-text-secondary);">
+        ※給与は経験・スキル・実績により変動します<br>
+        ※賞与・手当別途あり
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="section fade-in" style="background:#FFF0F3;">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-heading__en">BENEFITS</span>
+        <h2 class="section-heading__title">福利厚生</h2>
+      </div>
+      <p style="text-align:center; font-size:17px; font-weight:700; color:#333; margin-bottom:32px;">スタッフのアイデアから生まれた福利厚生制度。</p>
+      <div class="grid benefits-all-grid" style="grid-template-columns: repeat(3, 1fr); gap:20px;">
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.1</div>
+            <div style="font-size:32px; margin-bottom:8px;">🛡️</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">社会保険完備</h3>
+            <p class="card__text" style="font-size:12.5px;">健康保険・厚生年金・雇用保険・賠償責任保険</p>
+          </div>
         </div>
-        <a href="https://youtube.com/shorts/5xL8CpbVMLA" target="_blank" rel="noopener" style="flex: 0 0 auto; width: 220px; margin: 0 auto; display: block; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.12); text-decoration: none; transition: transform 0.3s;" onmouseenter="this.style.transform='scale(1.03)'" onmouseleave="this.style.transform='scale(1)'">
-          <img src="https://img.youtube.com/vi/5xL8CpbVMLA/maxresdefault.jpg" alt="DH紹介動画" style="width: 100%; aspect-ratio: 9/16; object-fit: cover; display: block;">
-          <!-- Play button -->
-          <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
-            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-              <circle cx="28" cy="28" r="28" fill="rgba(0,0,0,0.5)"/>
-              <polygon points="22,16 42,28 22,40" fill="#fff"/>
-            </svg>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.2</div>
+            <div style="font-size:32px; margin-bottom:8px;">🌴</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">休日</h3>
+            <p class="card__text" style="font-size:12.5px;">年間休日120日以上、GW・夏季/冬季休暇は連続7日以上</p>
           </div>
-          <!-- Bottom label -->
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 12px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); text-align: center;">
-            <span style="color: #fff; font-size: 12px; font-weight: 600;">YouTubeで視聴する</span>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.3</div>
+            <div style="font-size:32px; margin-bottom:8px;">📚</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">研修費補助</h3>
+            <p class="card__text" style="font-size:12.5px;">年間10万円（学会参加費・セミナー参加費）</p>
           </div>
-        </a>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.4</div>
+            <div style="font-size:32px; margin-bottom:8px;">🏠</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">住宅手当</h3>
+            <p class="card__text" style="font-size:12.5px;">月額3万円（交通費により変動）</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.5</div>
+            <div style="font-size:32px; margin-bottom:8px;">👶</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">産休・育休</h3>
+            <p class="card__text" style="font-size:12.5px;">法定通りの制度にプラス復帰支援</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.6</div>
+            <div style="font-size:32px; margin-bottom:8px;">💰</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">お金の勉強機会</h3>
+            <p class="card__text" style="font-size:12.5px;">企業型DC（企業型確定拠出年金）など</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.7</div>
+            <div style="font-size:32px; margin-bottom:8px;">🏆</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">スタッフ投票制度</h3>
+            <p class="card__text" style="font-size:12.5px;">チームワーク・支援行動・主体性などをスタッフ同士の投票で評価。年2回表彰（ギフト券＋表彰状）</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.8</div>
+            <div style="font-size:32px; margin-bottom:8px;">🌟</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">チーフ賞（成長評価）</h3>
+            <p class="card__text" style="font-size:12.5px;">年末の納会時に、チーフ陣が「今年最も成長した」と評価したスタッフを表彰</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.9</div>
+            <div style="font-size:32px; margin-bottom:8px;">💉</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">美容点滴インセンティブ</h3>
+            <p class="card__text" style="font-size:12.5px;">美容点滴の売上10%を施術者のボーナスへ還元</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.10</div>
+            <div style="font-size:32px; margin-bottom:8px;">✨</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">スタッフ矯正治療割引</h3>
+            <p class="card__text" style="font-size:12.5px;">30%OFF（顔出し症例40%OFF）</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.11</div>
+            <div style="font-size:32px; margin-bottom:8px;">🛍️</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">自由診療・物販スタッフ割引</h3>
+            <p class="card__text" style="font-size:12.5px;">スタッフの親・パートナーにも適用</p>
+          </div>
+        </div>
+        <div class="card" style="background:#fff; border:none; border-radius:16px;">
+          <div class="card__body text-center" style="padding:24px 16px;">
+            <div style="font-size:13px; font-weight:900; color:#FF7675; margin-bottom:4px;">No.12</div>
+            <div style="font-size:32px; margin-bottom:8px;">📅</div>
+            <h3 class="card__title" style="font-size:15px; margin-bottom:6px;">土日出勤手当</h3>
+            <p class="card__text" style="font-size:12.5px;">土日両日出勤につき＋5,000円（月４回で＋20,000円）</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
