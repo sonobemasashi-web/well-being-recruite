@@ -34,7 +34,7 @@ window.WDC_VIDEOS = [
     title: "【歯科衛生士の就活】自分に合った歯科医院の見つけ方｜5つの判断基準",
     description:
       "「どの歯科医院が自分に合っているのか？」\n院長が歯科衛生士の就活で大切にしてほしい5つの判断基準をお話しします。",
-    tags: ["dh"],
+    tags: ["dh", "ai-tuber"],
     date: "2026-07-29",
     featured: true
   }
