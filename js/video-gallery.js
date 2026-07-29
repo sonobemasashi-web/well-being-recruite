@@ -50,7 +50,7 @@
   }
 
   /** 動画カード1枚を組み立てる */
-  function buildCard(video, isSingle) {
+  function buildCard(video, isSingle, isFirst) {
     var card = document.createElement('div');
     card.className = 'video-card' + (isSingle ? ' video-card--single' : '');
 
@@ -73,7 +73,8 @@
     thumb.className = 'video-card__thumb';
     thumb.src = YT_THUMB(video.id);
     thumb.alt = video.title;
-    thumb.loading = 'lazy';
+    // 先頭の1本だけは即読込（メインで見せる動画なので待たせない）
+    thumb.loading = isFirst ? 'eager' : 'lazy';
     thumb.onerror = function () {
       thumb.onerror = null;
       thumb.src = YT_THUMB_FALLBACK(video.id);
@@ -149,8 +150,8 @@
       var wrap = document.createElement('div');
       wrap.className = 'video-gallery video-gallery--' + layout;
 
-      videos.forEach(function (v) {
-        wrap.appendChild(buildCard(v, layout === 'single'));
+      videos.forEach(function (v, i) {
+        wrap.appendChild(buildCard(v, layout === 'single', i === 0));
       });
 
       slot.innerHTML = '';
