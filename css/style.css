@@ -1382,3 +1382,139 @@ h1, h2, h3, h4, h5, h6 {
     height: 220px !important;
   }
 }
+
+/* ============================================================
+   VIDEO GALLERY — 動画ギャラリー共通コンポーネント
+   （data/videos.js + js/video-gallery.js とセットで動作）
+   ============================================================ */
+
+.video-gallery {
+  display: grid;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+/* 1本だけ大きく見せるレイアウト */
+.video-gallery--single {
+  max-width: 720px;
+  grid-template-columns: 1fr;
+}
+
+/* 複数本を並べるレイアウト */
+.video-gallery--grid {
+  max-width: 1040px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 900px) {
+  .video-gallery--grid {
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    gap: 32px;
+  }
+}
+
+/* --- カード --- */
+.video-card {
+  text-align: center;
+}
+
+.video-card__frame {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  background: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card__frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+.video-card__frame:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.video-card__thumb,
+.video-card__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card__thumb {
+  object-fit: cover;
+  display: block;
+}
+
+/* 再生ボタン */
+.video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.video-card__play svg {
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.video-card__play-bg {
+  fill: rgba(0, 0, 0, 0.62);
+  transition: fill 0.3s ease;
+}
+
+.video-card__frame:hover .video-card__play {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.video-card__frame:hover .video-card__play-bg {
+  fill: #ff0000;
+}
+
+/* --- テキスト --- */
+.video-card__desc {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin: 0 0 28px;
+}
+
+.video-card__title {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin: 16px 0 0;
+}
+
+/* grid表示のときは 動画 → 説明文 → タイトル の順に組み替える */
+.video-gallery--grid .video-card {
+  display: flex;
+  flex-direction: column;
+}
+.video-gallery--grid .video-card__frame { order: 1; }
+.video-gallery--grid .video-card__title { order: 2; margin-top: 16px; }
+.video-gallery--grid .video-card__desc  { order: 3; margin: 8px 0 0; font-size: 14px; }
+
+@media (max-width: 767px) {
+  .video-card__desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .video-card__play svg {
+    width: 54px;
+    height: 38px;
+  }
+}
