@@ -298,6 +298,18 @@
   </section>
 
   <!-- ===== RECRUITMENT PHILOSOPHY ===== -->
+  <style>
+    @media (max-width: 980px) {
+      .recruitment-philosophy-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 480px !important;
+      }
+      .recruitment-arrow {
+        transform: rotate(90deg);
+        padding: 8px 0;
+      }
+    }
+  </style>
   <section class="section fade-in" style="background: #FFF9F5;">
     <div class="container">
       <div class="section-heading" style="margin-bottom: 16px;">
@@ -320,8 +332,8 @@
         </div>
       </div>
 
-      <!-- 2カラム：標準化 × コミュニティ -->
-      <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 960px; margin: 0 auto;">
+      <!-- 3カラム：標準化 × コミュニティ → 成果 -->
+      <div class="grid recruitment-philosophy-grid" style="grid-template-columns: 1fr 1fr auto 1fr; gap: 20px; max-width: 1200px; margin: 0 auto; align-items: stretch;">
         <!-- 標準化 8割 -->
         <div class="card" style="background:#fff; border:none; border-radius:16px; border-top: 4px solid var(--color-primary);">
           <div class="card__body" style="padding: 28px 24px;">
@@ -360,6 +372,32 @@
               <li>✓ 人として・社会人としての教育</li>
               <li>✓ MBTI診断による相互理解</li>
               <li>✓ 7つの習慣など内省の機会</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 矢印（両輪 → 成果） -->
+        <div class="recruitment-arrow" style="display:flex; align-items:center; justify-content:center; font-size: 36px; color: #ccc; font-weight: 300;">
+          →
+        </div>
+
+        <!-- 成果：Well-beingなチーム -->
+        <div class="card" style="background: linear-gradient(135deg, #FFF7F6 0%, #F0FBFA 100%); border:none; border-radius:16px; border-top: 4px solid #FFD54F; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+          <div class="card__body" style="padding: 28px 24px;">
+            <div style="display:flex; align-items:baseline; gap:8px; margin-bottom: 12px;">
+              <span style="font-size: 32px; line-height: 1;">🌱</span>
+              <h3 style="font-size: 18px; font-weight: 700; margin: 0;">成果</h3>
+            </div>
+            <p style="font-size: 13px; color: #666; margin-bottom: 20px; line-height: 1.7;">
+              両輪のバランスから生まれる<br>
+              <strong>Well-beingなチーム</strong>と、<strong>プロの医療</strong>。
+            </p>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 13.5px; line-height: 1.9;">
+              <li>★ 患者さまに「家族にできる医療」</li>
+              <li>★ スタッフに誇りある職場</li>
+              <li>★ 持続可能な予防歯科モデル</li>
+              <li>★ 長く働ける安心感</li>
+              <li>★ 人として成長できる環境</li>
             </ul>
           </div>
         </div>
